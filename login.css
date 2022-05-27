@@ -98,10 +98,9 @@ a{
     font-size: 16px;
     font-weight: 300;
     width: 183px;
-    height: 45px;
+    height: 50px;
     margin-bottom: 5px;
     border-radius: 5px;
-    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -162,8 +161,14 @@ a{
 #naverIdLogin_loginButton,
 #naverIdLogin_loginButton img{
   width: 183px;
-  height: 45px;
+  height: 40px;
   margin-bottom: 5px;
+}
+
+#kakaoBtn img{
+    width: 183px;
+    height: 40px;
+    margin-bottom: 15px;
 }
 
 

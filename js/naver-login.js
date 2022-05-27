@@ -30,7 +30,7 @@ naverLogin.getLoginStatus(function (status) {
 
 let testPopUp;
 function openPopUp() {
-  testPopUp= window.open("https://nid.naver.com/nidlogin.logout", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=1,height=1");
+  testPopUp= window.open("https://nid.naver.com/nidlogin.logout", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=483px,height=669px");
 }
 function closePopUp(){
   testPopUp.close();
