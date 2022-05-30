@@ -1,6 +1,4 @@
 Kakao.init('131c1fb5d2ff87ae71a9bf1ef3ded310'); 
-console.log(Kakao.isInitialized()); 
-
 
 //카카오로그인
 function kakaoLogin() {

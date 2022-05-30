@@ -10,10 +10,39 @@
 a{
     text-decoration: none;
 }
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 9;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .header-logo img{
+    width: 100px;
+    height: 60px;
+    position: relative;
+    left: 25px;
+  }
+
 .container{
     min-height: 100vh;
     width: 100%;
-    background: black no-repeat center center/cover;
+    background: rgb(112, 112, 112) no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,25 +148,25 @@ a{
     background: #000;
 }
 
-.container form .footerForm{
+.container form .lowForm{
     width: 100%;
     height: 50px;
     align-items: center;
     text-align: center;
 }
 
-.container form .footerForm .SignUp{
+.container form .lowForm .SignUp{
     color: #e9e9e9;
     font-size: 15px;
 }
 
-.container form .footerForm .social{
+.container form .lowForm .social{
     margin-left: 42px;
     display: flex;
     margin-top: 5px;
 }
 
-.container form .footerForm .social a{
+.container form .lowForm .social a{
     height: 45px;
     width: 45px;
     background: rgba(255,255,255,0.3);
@@ -145,15 +174,15 @@ a{
     display: flex;
 }
 
-.container form .footerForm .social a:hover{
+.container form .lowForm .social a:hover{
     background: rgba(255,255,255,0.1);
 }
 
-.container form .footerForm .social a:nth-child(3){
+.container form .lowForm .social a:nth-child(3){
     border-radius: 0 0 4px 0;
 }
 
-.container form .footerForm .social a ion-icon{
+.container form .lowForm .social a ion-icon{
     color: #eee;
     font-size: 35px;
 }
@@ -171,4 +200,16 @@ a{
     margin-bottom: 15px;
 }
 
+
+@media screen and (max-width:768px) {
+    .container{
+    background-color: #000;
+    }
+    header{
+        display: inline;
+    }
+    .header-logo{
+        margin: 0 auto;
+    }
+}
 
