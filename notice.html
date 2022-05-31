@@ -31,7 +31,7 @@
 
   <!-- 메인 -->
   <main>
-    <div style="margin: 0 auto;">
+    <div class="main">
     <div class="leftSide">
       <div class="l-sidebar">
         <div class="l-menu">
@@ -40,7 +40,7 @@
         <div class="l-menu">
           <a>도움말</a><i class="fa-solid fa-circle-question"></i>
         </div>
-        <div class="l-menu">
+        <div class="l-menu inquiry">
           <a>문의하기</a><i class="fa-solid fa-person-circle-question"></i>
         </div>
         <div class="l-menu">
@@ -52,15 +52,73 @@
     <div class="noti-container">
       <div class="noti-main">
         <div class="noti-title">공지사항</div>
-          <ul>
-            <li></li>
-          </ul>
-        
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
+      </div>
+      <div class="noti-list">
+        <i class="fa-solid fa-caret-right"></i><p>잘 놀다 갑니다 홈페이지에 오신 것을 환영 합니다.</p>
       </div>
     </div>
   </div>
   </main>
 
+
+
+  <!-- 문의모달 -->
+  
+  <div class="modal-background inactive">
+    <div class="modal-container">
+    <div>
+      <form action="">
+        <p class="modal-title">문의하기</p>
+        <div class="modal-input">
+          <input type="text" class="modal-email" placeholder="이메일을 입력하세요"></input>
+        </div>
+        <div class="modal-text">
+          <textarea name="" id="" rows="5" maxlength="1000" placeholder="문의 내용을 입력하세요"></textarea>
+        </div>
+        <div class="modal-screen">
+          <p>스크린샷</p>
+          <div class="fileUploadSize">
+            <label class="fileUpload" for="addInquiryIma">
+              <i class="fa-solid fa-folder-open"></i>
+              <span style="margin-left: 10px;">파일 추가</span>
+            </label>
+          </div>
+        </div>
+        <div class="modal-bnt">
+          <button class="modal-send-bnt" type="submit">보내기</button>
+          <button class="modal-close">취소</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
   <!-- 푸터 -->
@@ -84,6 +142,7 @@
     </div>
   </footer>
 
+  <script src="./js/inquiry-modal.js"></script>
   <script src="https://kit.fontawesome.com/536e37fbfc.js" crossorigin="anonymous"></script>
 </body>
 </html>

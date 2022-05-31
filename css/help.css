@@ -8,12 +8,12 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'busan', sans-serif;
 }
 /* body */
-
-a,
-button{
+body {
+  font-family: 'busan', sans-serif;
+}
+a{
   cursor: pointer;
 }
 
@@ -158,13 +158,22 @@ main{
 
 
 
+.noti-sub ul{
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content:space-evenly;
+}
+
+
+
 
 /* footer */
 footer {
   display: flex;
   background-color: white;
   width: 100vw;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #3d2828;
   position:fixed;
   bottom: 0px;
 }
@@ -176,6 +185,7 @@ footer {
   display: flex;
   margin-bottom: 10px;
   align-items : center;
+  justify-content: space-evenly;
 }
 .footer-menu a{
   margin-right: 10px;
@@ -195,101 +205,4 @@ footer {
   color: black;
 }
 
-/* modal */
 
-.inactive{
-  display: none;
-}
-
-.modal-background{
-  position: absolute;
-  top:0; 
-  left: 0; 
-  bottom: 0; 
-  right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 998;
-}
-
-
-.modal-container{
-  width: 350px;
-  height: 410px;
-  margin: 150px auto;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-}
-
-.modal-title{
-  text-align: left;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 16px;
-}
-
-.modal-input{
-  text-align: center;
-  width: 100%;
-  margin-top: 30px;
-}
-form  input, textarea{
-  border: 1px solid #e5e5e5;
-}
-.modal-input input{
-  width: 250px;
-  height: 40px;
-}
-
-.modal-text{
-  text-align: center;
-  margin-top: 30px;
-  width: 100%;
-}
-
-.modal-text textarea{
-  width: 250px;
-}
-
-
-.modal-screen{
-  text-align: center;
-  width: 100%;
-  height: 100px;
-}
-
-.modal-screen p{
-  text-align: left;
-  padding: 16px;
-}
-.fileUploadSize{
-  width: 250px;
-  height: 40px;
-  border: 1px solid #e5e5e5;
-  margin: 0 auto;
-  line-height: 40px;
-}
-
-.fileUploadSize label{
-  justify-content: space-between;
-}
-
-.modal-bnt{
-  text-align: center;
-  margin-top: 20px;
-}
-
-.modal-send-bnt,
-.modal-close{
-  width: 80px;
-  height: 30px;
-}
-
-.modal-send-bnt{
-  background: black;
-  color: #fff;
-}
