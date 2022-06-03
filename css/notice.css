@@ -86,16 +86,12 @@ main{
   background: #fff;
 }
 
+
+/* leftSide */
 .main{
   display: flex;
   justify-content: center;
 }
-
-.noti-main{
-  display: flex;
-}
-
-/* leftSide */
 
 .leftSide{
   width: 230px;
@@ -110,13 +106,36 @@ main{
 
 }
 .l-menu{
-  letter-spacing: 2px;
-  font-size: 16px;
   border: 1px solid #e5e5e5;
   display: flex;
   padding: 15px;
   cursor: pointer;
   justify-content: space-between;
+}
+
+.l-menu a{
+  color: black;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.l-menu i{
+  font-size: 16px;
+  display: none;
+
+}
+.l-menu:hover{
+  transform-origin: center center;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.l-menu:hover i {
+  display: block;
+} 
+
+.rotate{
+  transform:rotate(90deg);
 }
 
 .l-sidebar div:not(:last-of-type){
@@ -125,6 +144,10 @@ main{
 
 
 /* center */
+
+.noti-main{
+  display: flex;
+}
 
 .noti-container{
   margin-top: 20px;
@@ -150,13 +173,16 @@ main{
   padding: 15px;
   font-size: 15px;
   display: flex;
+  cursor: pointer;
+}
+.noti-list i{
+  margin-right: 15px;
 }
 
-.noti-list p {
-  margin-left: 10px;
+
+.inactive{
+  display: none;
 }
-
-
 
 
 /* footer */
