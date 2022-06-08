@@ -75,3 +75,6 @@ main .item .item-text li p{
   cursor: pointer;
 }
 
+.inactive{
+  display: none;
+}

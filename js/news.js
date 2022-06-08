@@ -19,8 +19,9 @@ $(()=>{
                     var $aTag = $("<a class='newstitle'/>").attr({"herf":$link, "target":"_blank"}).text($title);
                     var $liTag = $("<li class='newslist'/>").append($aTag);
 
-                    var $p1Tag = $("<p class='content'/>").append($content);
-                    var $p2Tag = $("<p class='author'/>").append($author);
+                    var $p1Tag = $("<p class='content '/>").append($content);
+                    var $p2Tag = $("<p class='author '/>").append($author);
+                    var $p3Tag = $("<p class='data '/>").append($data);
                     var $p3Tag = $("<p class='data'/>").append($data);
 
 
@@ -30,6 +31,11 @@ $(()=>{
                 $(".wrap1").append($ulTag);
                 $(".author").prepend(`<p>작성자 :&nbsp</p>`);
                 $(".data").prepend(`<p>작성일자 :&nbsp</p>`);
+
+                $(".newstitle").on('click',(e)=>{
+                    e.stopPropagation();
+                    $('p').slideToggle();
+                });
             }
         }
     });
@@ -54,7 +60,7 @@ $(()=>{
                     var $content = $(o).find("content\\:encoded").text();
 
 
-                    var $aTag = $("<a/>").attr({"herf":$link, "target":"_blank"}).text($title);
+                    var $aTag = $("<a class='newstitle'/>").attr({"herf":$link, "target":"_blank"}).text($title);
                     var $liTag = $("<li class='newslist'/>").append($aTag);
 
                     var $p1Tag = $("<p class='content'/>").append($content);
@@ -89,7 +95,7 @@ $(()=>{
                     var $content = $(o).find("description").text();
 
 
-                    var $aTag = $("<a/>").attr({"herf":$link, "target":"_blank"}).text($title);
+                    var $aTag = $("<a class='newstitle'/>").attr({"herf":$link, "target":"_blank"}).text($title);
                     var $liTag = $("<li class='newslist'/>").append($aTag);
 
                     var $p1Tag = $(`<p class='content'/>`).append($content);
@@ -101,7 +107,10 @@ $(()=>{
                     $ulTag.append($liTag);
                 });
                 $(".wrap3").append($ulTag);
+                
             }
         }
     });
 });
+
+
