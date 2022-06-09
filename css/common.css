@@ -1,16 +1,28 @@
 /*import font*/
 @import url('https://webfontworld.github.io/busan/Busan.css');
 
+
+:root{
+  --normal-line:1px solid;
+  
+  --light-gray:#dcdcdc90;
+  --medium-gray: #b4b4b4;
+  --dark-gray: #969696;
+
+  --font-17 : 17px;
+  --font-22 : 22px;
+  --font-25 : 25px;
+
+}
+
+
+
 *{
   margin: 0px;
   padding: 0px;
   list-style: none;
   font-family: 'busan', sans-serif;
   text-decoration: none;
-}
-
-a{
-    text-decoration: none;
 }
 
 
@@ -33,7 +45,7 @@ header {
 .header-logo{
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: var(--font-25);
   letter-spacing: 2px;
   color: white;
 }
@@ -74,11 +86,13 @@ header {
 
 /* footer */
 footer {
-  background-color: white;
+
+  background-color: var(--light-gray);
   /* width: 100vw; */
 }
 .footer {
   width: 100%;
+  padding-top: 10px;
 }
 .footer-information{
   font-size: 12px;
@@ -87,6 +101,7 @@ footer {
 }
 
 /* pagemove button*/
+
 
 .pagemove ul{
   display: flex;
@@ -102,21 +117,26 @@ footer {
 
 .pagemove-number a{
   padding : 10px 15px;
-  background-color: darkgray;
 }
 
-.pagemove-number a:hover{
-  padding : 10px 15px;
-  background-color: blue;
+.pagemove-number a,
+.pagemove-Arrow a{
+  background-color: var(--light-gray);
+}
+
+.pagemove-number a:hover,
+.pagemove-Arrow a:hover{
+  background-color: var(--medium-gray);
   color: white;
 }
 
-.pagemove-number li .current{
-  background-color: red;
-  color: black;
+.pagemove-Arrow a:active,
+.pagemove-number a:active{
+  color: var(--light-gray);
+  background-color: var(--medium-gray);
 }
+
 .pagemove-Arrow a{
-  background-color: darkgray;
   display: inline-block;
   width: 37px;
   height: 37px;
@@ -124,6 +144,5 @@ footer {
   text-align: center;
 }
 
-.pagemove-Arrow a:hover{
-  background-color: skyblue;
-}
+
+

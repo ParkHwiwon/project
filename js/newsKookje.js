@@ -16,14 +16,15 @@ $(()=>{
                     var $content = $(o).find("description").text();
 
 
-                    var $aTag = $("<a class='newstitle'/>").attr({"herf":$link, "target":"_blank"}).text($title);
-                    var $liTag = $("<li class='newslist'/>").append($aTag);
+                    var $hnTag = $("<hn class='newstitle'/>").text($title);
+                    // var $aTag = "<a href='" + $link + "'>" + $title + "</a>";
+                    var $liTag = $("<li class='newslist'/>").append($hnTag);
 
-                    var $p1Tag = $(`<p class='content'/>`).append($content);
-                    var $p2Tag = $(`<p class='author'/>`).append($author);
-                    var $p3Tag = $(`<p class='data'/>`).append($data);
-                    var $divTag = $("<div class='toggle'/>").append($p1Tag, $p2Tag, $p3Tag);
-
+                    var $p1Tag = $("<p class='content '/>").append($content);
+                    var $p2Tag = $("<p class='author '/>").append($author);
+                    var $p3Tag = $("<p class='data '/>").append($data);
+                    var $newsLink = $("<a href='" + $link + "'>" + "<i class='fa-solid fa-arrow-right-long'>&nbsp기사로 가기</i>" + "</a>");
+                    var $divTag = $("<div class='toggle'/>").append($p1Tag, $p2Tag, $p3Tag, $newsLink);
 
                     $liTag.append($divTag);
                     $ulTag.append($liTag);

@@ -1,6 +1,23 @@
 @import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
+
+:root{
+  --normal-line:1px solid;
+  
+  --light-gray:#dcdcdc90;
+  --medium-gray: #b4b4b4;
+
+  --font-17 : 17px;
+  --font-22 : 22px;
+  --font-25 : 25px;
 
 
+}
+
+
+body{
+  background: #dcdcdc90;
+}
 /* main */
 
 main {
@@ -9,6 +26,7 @@ main {
   padding-top : 80px;
   width: 1000px;
   margin: 0 auto;
+
 }
 
 main .news {
@@ -20,12 +38,11 @@ main .news {
 main .content{
   flex: 0.9;
   margin-top: 30px;
-  width: 700px;
+  width: 750px;
 }
 
 main .title{
-  border-bottom: 1px solid #e5e5e5;
-
+  border-bottom: var(--normal-line) var(--medium-gray);
 }
 
 
@@ -35,7 +52,7 @@ main .title ul{
   width: 700px;
   height: 50px;
   margin: 0 auto;
-  font-size: 22px;
+  font-size: var(--font-22);
 
 }
 
@@ -53,10 +70,10 @@ main .item {
 
 
 main .item .item-text li{
-  font-size: 17px;
+  font-size: var(--font-17);
   margin-bottom: 30px;
   list-style-type: circle;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: var(--normal-line) var(--medium-gray);
 }
 
 main .item .item-text li p{
@@ -70,12 +87,18 @@ main .item .item-text li p{
 .newslist > div > *,
 .newslist > div > p > *{
   font-family: 'IropkeBatang';
-  font-size: 20px;
+  font-size: var(--font-22);
+  letter-spacing: 2px;
+}
+
+.newslist > div > a{
+  font-size: var(--font-17);
+  color: #FFAAAA;
 }
 
 .newstitle{
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 25px;
+  font-family: 'Noto Serif KR', serif;
 }
 
 #moveup{
@@ -90,6 +113,3 @@ main .item .item-text li p{
   cursor: pointer;
 }
 
-.inactive{
-  display: none;
-}

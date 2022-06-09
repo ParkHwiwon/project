@@ -1,0 +1,280 @@
+/* main - section1 */
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.main-section1{
+  display: flex;
+  flex-direction : column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/Haeundae.png");
+  background-repeat: no-repeat;
+  background-size : 100% 100%;
+  align-items : center;
+  justify-content: center;
+  color: white;
+
+  scroll-snap-align:start;
+}
+
+.main-section1 h1 {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.main-section1 h2 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.main-section1 button {
+  border-radius: 40px;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 74px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align : center;
+}
+
+/* main - section2 */
+
+.main-section2{
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/Nurimaru2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  scroll-snap-align:start;
+}
+
+.main-section2-img {
+ margin-right: 200px; 
+}
+
+.main-section2-img img{
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.main-section2-text {
+  margin-left: 100px; 
+  margin-right: 100px;
+}
+
+.main-section2-text h2{
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.main-section2-text h3{
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.main-section2-text button {
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 74px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align : center;
+}
+
+/* main - section3 */
+
+
+.main-section3{
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/Hwangnyeongsan2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  scroll-snap-align:start;
+}
+
+.main-section3-img {
+  margin-left: 100px; 
+  margin-right: 100px; 
+}
+
+.main-section3-img img{
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.main-section3-text {
+  margin-right: 200px;
+}
+
+.main-section3-text h2{
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.main-section3-text h3{
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.main-section3-text button {
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 74px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align : center;
+}
+
+/* main - section4 */
+.main-section4{
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/Haeundae3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  scroll-snap-align:start;
+}
+
+.main-section4-img {
+  margin-left: 100px; 
+  margin-right: 100px; 
+}
+
+.main-section4-img img{
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.main-section4-text {
+  margin-right: 200px;
+}
+
+.main-section4-text h2{
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.main-section4-text h3{
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.main-section4-text button {
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 74px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align : center;
+}
+
+/* main - section5 */
+
+.main-section5{
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/UNpark.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  scroll-snap-align:start;
+}
+
+.main-section5-img {
+ margin-right: 200px; 
+}
+
+.main-section5-img img{
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.main-section5-text {
+  margin-left: 100px; 
+  margin-right: 100px;
+}
+
+.main-section5-text h2{
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.main-section5-text h3{
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.main-section5-text button {
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 74px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align : center;
+}
+
+/* moveup button */
+
+#moveup{
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: white;
+}
+#moveup:hover{
+  cursor: pointer;
+}
+
+
+footer{
+  scroll-snap-align:start;
+}
