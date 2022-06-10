@@ -10,9 +10,7 @@
  <!-- 기타 -->
  <link rel="stylesheet" href="./css/common.css" >
  <link rel="stylesheet" href="./css/index.css">
- <!-- GSAP JS-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
  <script src="https://kit.fontawesome.com/536e37fbfc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,40 +35,41 @@
     </div>
   </header>
   <!-- 메인 -->
+  <div class="space"></div>
   <main>
     <section class="main-section1">
-      <h1>sdadas</h1>
-      <h2>sdadas</h2>
-      <button>지금 바로 회원가입</button>
+      <h1></h1>
+      <h2></h2>
+      <a href="./signUp.html"><button>지금 바로 회원가입</button></a>
     </section>
     <section class="main-section2">
       <div class="main-section2-img">
-        <img src="./images/Nampodong.jpg">
+        <img src="./images/YongdusanPark.jpeg">
       </div>
       <div class="main-section2-text">
-        <h2>sdadas</h2>
-        <h3>sdadas</h3>
-        <button>부산소개 바로가기</button>
+        <h2>바다의 도시</h2>
+        <h3>제2의 수도이자 항구도시 부산이 궁금하다면?</h3>
+        <a href="./busanIntroduce.html"><button>부산소개 바로가기</button></a>
       </div>
     </section>
     <section class="main-section3">
       <div class="main-section3-text">
-        <h2>sdadas</h2>
-        <h3>sdadas</h3>
-        <button>커뮤니티 바로가기</button>
+        <h2>정보공유</h2>
+        <h3>다양한 사람들과 정보를 공유해요</h3>
+        <a href="#"><button>커뮤니티 바로가기</button></a>
       </div>
       <div class="main-section3-img">
-        <img src="./images/YongdusanPark.jpeg">
+        <img src="./images/Nampodong.jpg">
       </div>
     </section>
     <section class="main-section4">
       <div class="main-section4-text">
-        <h2>sdadas</h2>
-        <h3>sdadas</h3>
-        <button>소식 바로가기</button>
+        <h2>소식통</h2>
+        <h3>부산과 관련된 공지 및 뉴스</h3>
+        <a href="./newsAll.html"><button>소식 바로가기</button></a>
       </div>
       <div class="main-section4-img">
-        <img src="./images/Nurimaru.jpg">
+        <img src="./images/cinemaHall.jpg">
       </div>
     </section>
     <section class="main-section5">
@@ -78,9 +77,9 @@
         <img src="./images/Nurimaru3.jpg">
       </div>
       <div class="main-section5-text">
-        <h2>sdadas</h2>
-        <h3>sdadas</h3>
-        <button>포토 바로가기</button>
+        <h2>항구도시 부산</h2>
+        <h3>부산의 아름다운 view가 궁금하다면?</h3>
+        <a href="#"><button>포토 바로가기</button></a>
       </div>
     </section>
   </main>
@@ -97,7 +96,13 @@
     </div>
   </footer>
     <!-- 위로 이동 버튼 -->
-    <span id="moveup" class="material-symbols-outlined">arrow_circle_up</span>
+    <div class="moveBnt">
+      <span id="moveup" class="material-symbols-outlined">arrow_circle_up</span>
+      <a href="#"><img class="bugi" src="./images/bugi3d100.png" /></a>
+    </div>
+
+
+
     <script src="./js/busanIntroduce.js"></script>
 </body>
 </html>

@@ -17,9 +17,7 @@ html{
 
 /* main section 1 */
 .main-section1{
-  background: #C9D6FF;
-  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
-  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,10 +56,7 @@ html{
 /* main section 2 */
 
 .main-section2{
-  background: #C9D6FF;
-  background: -webkit-linear-gradient(to right, #C9D6FF, #E2E2E2); 
-  background: linear-gradient(to right, #C9D6FF, #E2E2E2);
-
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,9 +95,7 @@ html{
 /* main section 3 */
 
 .main-section3{
-  background: #C9D6FF;
-  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
-  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,9 +133,7 @@ html{
 /* main section 4 */
 
 .main-section4{
-  background: #C9D6FF;
-  background: -webkit-linear-gradient(to right, #C9D6FF, #E2E2E2); 
-  background: linear-gradient(to right, #C9D6FF, #E2E2E2);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,13 +172,20 @@ html{
 
 #moveup{
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 50px;
   width: 50px;
   height: 50px;
   font-size: 50px;
+  color: black;
 }
 #moveup:hover{
+  cursor: pointer;
+}
+img.bugi{
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
   cursor: pointer;
 }
 

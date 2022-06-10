@@ -4,25 +4,32 @@ html{
   scroll-snap-type: y mandatory;
 }
 
+main{
+  padding-top: 50px;
+}
+
+
 .main-section1{
   display: flex;
   flex-direction : column;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/Haeundae.png");
+  background-image: url(../images/f874c08452c4409d8f236e88102cfe4c.jpg);
   background-repeat: no-repeat;
-  background-size : 100% 100%;
+  background-size : 80% 100%;
+	background-position: center;
   align-items : center;
   justify-content: center;
   color: white;
+  letter-spacing: 2px;
 
   scroll-snap-align:start;
 }
 
 .main-section1 h1 {
   font-weight: 700;
-  font-size: 60px;
-  margin-bottom: 70px;
+  font-size: 50px;
+  margin-bottom: 80px;
 }
 
 .main-section1 h2 {
@@ -51,8 +58,7 @@ html{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/Nurimaru2.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   background-size: 100% 100%;
 
   scroll-snap-align:start;
@@ -106,8 +112,7 @@ html{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/Hwangnyeongsan2.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   background-size: 100% 100%;
 
   scroll-snap-align:start;
@@ -159,8 +164,7 @@ html{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/Haeundae3.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   background-size: 100% 100%;
 
   scroll-snap-align:start;
@@ -213,8 +217,9 @@ html{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/UNpark.jpg");
-  background-repeat: no-repeat;
+  background-color: #DCD9D4;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+  background-blend-mode: soft-light,screen;
   background-size: 100% 100%;
 
   scroll-snap-align:start;
@@ -263,14 +268,20 @@ html{
 
 #moveup{
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 50px;
   width: 50px;
   height: 50px;
   font-size: 50px;
-  color: white;
+  color: black;
 }
 #moveup:hover{
+  cursor: pointer;
+}
+img.bugi{
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
   cursor: pointer;
 }
 

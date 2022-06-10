@@ -17,8 +17,7 @@ $(()=>{
 
 
                     var $hnTag = $("<hn class='newstitle'/>").text($title);
-                    // var $aTag = "<a href='" + $link + "'>" + $title + "</a>";
-                    var $liTag = $("<li class='newslist'/>").append($hnTag);
+                    var $liTag = $("<li id='newslist' class='newslist'/>").append($hnTag);
 
                     var $p1Tag = $("<p class='content '/>").append($content);
                     var $p2Tag = $("<p class='author '/>").append($author);
@@ -29,14 +28,20 @@ $(()=>{
 
                     $liTag.append($divTag);
                     $ulTag.append($liTag);
+
+
+
                 });
                 $(".wrap1").append($ulTag);
                 $(".author").prepend(`<p>작성자 :&nbsp</p>`);
                 $(".data").prepend(`<p>작성일자 :&nbsp</p>`);
 
+                
                 $(".newstitle").on('click',()=>{ //해당 클래스 클릭 시 
-                    $('.toggle').slideToggle();         // 'p' 태그 모두 슬라이드 업, 다운
-                });
+                    $('.toggle').slideToggle();  // 'p' 태그 모두 슬라이드 업, 다운
+                    });
+                
+
             }
         }
     });

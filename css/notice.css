@@ -137,5 +137,9 @@ main{
   margin: 30px 30px;
 }
 
+.rotate{
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
 
 
