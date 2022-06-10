@@ -1,9 +1,4 @@
 /* main - section1 */
-
-html{
-  scroll-snap-type: y mandatory;
-}
-
 main{
   padding-top: 50px;
 }
@@ -14,25 +9,33 @@ main{
   flex-direction : column;
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/f874c08452c4409d8f236e88102cfe4c.jpg);
-  background-repeat: no-repeat;
-  background-size : 80% 100%;
-	background-position: center;
+  background: #F2F2F2;
+  background-size : 100% 100%;
   align-items : center;
   justify-content: center;
-  color: white;
+  color: black;
   letter-spacing: 2px;
-
-  scroll-snap-align:start;
 }
 
-.main-section1 h1 {
+.main-section1-img img{
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+  margin-left: 200px; 
+  margin-bottom: 70px;
+}
+
+.main-section1-text {
+  margin-left: 300px;
+}
+
+.main-section1-text h2{
   font-weight: 700;
-  font-size: 50px;
-  margin-bottom: 80px;
+  font-size: 60px;
+  margin-bottom: 70px;
 }
 
-.main-section1 h2 {
+.main-section1-text h3{
   font-weight: 300;
   font-size: 30px;
   margin-bottom: 70px;
@@ -58,25 +61,21 @@ main{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background: #ebedee ;
   background-size: 100% 100%;
-
-  scroll-snap-align:start;
 }
 
-.main-section2-img {
- margin-right: 200px; 
-}
 
 .main-section2-img img{
   border-radius: 100%;
   width: 600px;
   height: 600px;
+  margin-left: 200px; 
+  margin-bottom: 70px;
 }
 
 .main-section2-text {
-  margin-left: 100px; 
-  margin-right: 100px;
+  margin-left: 200px; 
 }
 
 .main-section2-text h2{
@@ -112,25 +111,21 @@ main{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #c3cfe2 ;
   background-size: 100% 100%;
 
-  scroll-snap-align:start;
-}
-
-.main-section3-img {
-  margin-left: 100px; 
-  margin-right: 100px; 
 }
 
 .main-section3-img img{
   border-radius: 100%;
   width: 600px;
   height: 600px;
+  margin-left: 200px; 
+  margin-bottom: 70px;
 }
 
 .main-section3-text {
-  margin-right: 200px;
+  margin-left: 300px;
 }
 
 .main-section3-text h2{
@@ -164,25 +159,22 @@ main{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background:  #e2d1c3 ;
   background-size: 100% 100%;
 
-  scroll-snap-align:start;
-}
-
-.main-section4-img {
-  margin-left: 100px; 
-  margin-right: 100px; 
 }
 
 .main-section4-img img{
   border-radius: 100%;
   width: 600px;
   height: 600px;
+  margin-left: 200px; 
+  margin-bottom: 70px;
 }
 
 .main-section4-text {
-  margin-right: 200px;
+  margin-left: 200px; 
+
 }
 
 .main-section4-text h2{
@@ -218,26 +210,21 @@ main{
   width: 100vw;
   height: 100vh;
   background-color: #DCD9D4;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-  background-blend-mode: soft-light,screen;
   background-size: 100% 100%;
 
-  scroll-snap-align:start;
-}
 
-.main-section5-img {
- margin-right: 200px; 
 }
 
 .main-section5-img img{
   border-radius: 100%;
   width: 600px;
   height: 600px;
+  margin-left: 200px; 
+  margin-bottom: 70px;
 }
 
 .main-section5-text {
-  margin-left: 100px; 
-  margin-right: 100px;
+  margin-left: 300px;
 }
 
 .main-section5-text h2{
@@ -264,28 +251,13 @@ main{
   text-align : center;
 }
 
-/* moveup button */
 
-#moveup{
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 50px;
-  height: 50px;
-  font-size: 50px;
-  color: black;
-}
-#moveup:hover{
-  cursor: pointer;
-}
-img.bugi{
-  position: fixed;
-  bottom: 100px;
-  right: 25px;
-  cursor: pointer;
-}
 
 
 footer{
-  scroll-snap-align:start;
+  position:fixed;
+  bottom: 0;
+  display:block;
+  width: 100%;
+  z-index:9;
 }

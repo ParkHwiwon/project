@@ -86,17 +86,16 @@ header {
 
 /* footer */
 footer {
-
-  background-color: var(--light-gray);
-  /* width: 100vw; */
+background-color: var(--light-gray);
+height: 130px;
 }
 .footer {
   width: 100%;
-  padding-top: 10px;
 }
 .footer-information{
   font-size: 12px;
-  margin : 0 auto;
+  margin: 0 auto;
+  padding-top: 15px;
   width: 300px;
 }
 
@@ -145,4 +144,10 @@ footer {
 }
 
 
-
+/* 부기 캐릭터 */
+img.bugi{
+  position: fixed;
+  bottom: 55%;
+  right: 5px;
+  cursor: pointer;
+}
