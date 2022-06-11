@@ -1,9 +1,22 @@
-/* main - section1 */
+
+:root{
+  --normal-line:1px solid;
+  
+  --light-gray:#dcdcdc90;
+  --medium-gray: #b4b4b4;
+  --dark-gray: #969696;
+
+  --font-17 : 17px;
+  --font-22 : 22px;
+  --font-25 : 25px;
+
+}
+
 main{
   padding-top: 50px;
 }
 
-
+/* main - section1 */
 .main-section1{
   display: flex;
   flex-direction : column;
@@ -44,7 +57,7 @@ main{
 
 .main-section1 button {
   border-radius: 40px;
-  background-color: white;
+  background-color: var(--medium-gray);
   color: black;
   width: 300px;
   height: 74px;

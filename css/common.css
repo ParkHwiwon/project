@@ -28,7 +28,7 @@
 
 /* Header */
 header {
-  width: 1903px;
+  width: 100%;
   height: 60px;
   display: flex;
   background-color: black;
@@ -97,6 +97,7 @@ height: 130px;
   margin: 0 auto;
   padding-top: 15px;
   width: 300px;
+  height: 130px;
 }
 
 /* pagemove button*/
@@ -143,11 +144,3 @@ height: 130px;
   text-align: center;
 }
 
-
-/* 부기 캐릭터 */
-img.bugi{
-  position: fixed;
-  bottom: 55%;
-  right: 5px;
-  cursor: pointer;
-}
