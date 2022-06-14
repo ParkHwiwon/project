@@ -10,6 +10,7 @@
  <link rel="stylesheet" href="./css/modal_changeNum.css">
  <link rel="stylesheet" href="./css/modal_changePhone.css">
  <link rel="stylesheet" href="./css/modal_signOut.css">
+ <link rel="stylesheet" href="./css/modal_easyLogin.css">
  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="16x16">
 </head>
 <body>
@@ -41,16 +42,16 @@
     <div class="leftSide">
       <div class="l-sidebar">
         <div class="l-menu">
-          <a href="#">공지사항</a><i class="fa-solid fa-bullhorn"></i>
+          <a href="./notice.html">공지사항<i class="fa-solid fa-bullhorn"></i></a>
         </div>
         <div class="l-menu">
-          <a href="./help.html">도움말</a><i class="fa-solid fa-circle-question"></i>
+          <a href="./help.html">도움말<i class="fa-solid fa-circle-question"></i></a>
         </div>
         <div class="l-menu inquiry">
-          <a href="">문의하기</a><i class="fa-solid fa-person-circle-question"></i>
+          <a>문의하기<i class="fa-solid fa-person-circle-question"></i></a>
         </div>
         <div class="l-menu">
-          <a href="">설정</a><i class="fa-solid fa-gear"></i>
+          <a href="./setting.html">설정<i class="fa-solid fa-gear"></i></a>
         </div>
       </div>
     </div>
@@ -106,7 +107,6 @@
     </footer>
 
   <!-- 문의모달 -->
-  
   <div class="modal-background inactive">
     <div class="modal-container">
     <div>
@@ -181,6 +181,26 @@
 </div>
 </div>
 
+<!-- 간편로그인 모달 -->
+<div class="modal-easyLogin-background inactive">
+  <div class="modal-easyLogin-container">
+  <div>
+    <form action="">
+      <p class="modal-easyLogin-title">간편로그인</p>
+        <div class="modal-easyLogin-msg">
+        <p>현재 연동된 로그인</p>
+        </div>
+      <div class="modal-easyLogin-input">
+        <p>네이버</p>
+      </div>
+      <div class="modal-easyLogin-bnt">
+        <button class="modal-easyLogin-send-bnt" type="submit">연동해제</button>
+        <button class="modal-easyLogin-close">취소</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 
 <!-- 회원탈퇴 모달 -->
 <div class="modal-signOut-background inactive">
@@ -208,6 +228,7 @@
 <script src="./js/modal_changePhone.js"></script>
 <script src="./js/modal_inquiry.js"></script>
 <script src="./js/modal_signOut.js"></script>
+<script src="./js/modal-easyLogin.js"></script>
 
 <script src="https://kit.fontawesome.com/536e37fbfc.js" crossorigin="anonymous"></script>
 
