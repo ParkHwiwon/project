@@ -1,0 +1,145 @@
+/*import font*/
+@import url('https://webfontworld.github.io/busan/Busan.css');
+@import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
+
+:root{
+  --normal-line:1px solid;
+  
+  --light-gray:#dcdcdc90;
+  --medium-gray: #b4b4b4;
+  --dark-gray: #969696;
+
+  --font-17 : 17px;
+  --font-22 : 22px;
+  --font-25 : 25px;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'busan', sans-serif;
+}
+
+/* main */
+
+
+main{
+  width: 100%;
+  height: 850px;
+  background: var(--light-gray);
+  padding-top: 70px;
+}
+
+
+/* leftSide */
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+.leftSide{
+  width: 230px;
+  height: 100%;
+}
+
+.l-sidebar{
+  width: 230px;
+  height: 200px;
+  margin-top: 20px;
+
+}
+.l-menu{
+  letter-spacing: 2px;
+  font-size: var(--font-17);
+  border: var(--normal-line) var(--medium-gray);
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.l-menu a{
+  color: black;
+  letter-spacing: 2px;
+  font-size: var(--font-17);
+}
+
+.l-menu i{
+  font-size: var(--font-17);
+  display: none;
+
+}
+.l-menu:hover{
+  transform-origin: center center;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.l-menu:hover i {
+  display: block;
+} 
+
+.l-sidebar div:not(:last-of-type){
+  border-bottom: none;
+}
+
+
+/* center */
+
+.noti-main{
+  display: flex;
+}
+
+.noti-container{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 900px;
+  height: 100%;
+
+}
+
+.noti-main{
+  border: var(--normal-line) var(--medium-gray);
+}
+
+.noti-title{
+  width: 100%;
+  font-size: var(--font-22);
+  padding: 15px;
+  float: overflow;
+}
+
+.noti-list{
+  border-bottom: var(--normal-line) var(--medium-gray);
+  padding: 15px;
+  font-size: var(--font-17);
+  display: flex;
+  cursor: pointer;
+}
+.noti-list i{
+  margin-right: 15px;
+}
+
+.noti-ul li,
+.noti-ul div{
+  font-size: var(--font-17);
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 500;
+}
+.a{
+  width: 100%;
+  height: 100%;
+  margin: 30px 30px;
+}
+
+.rotate{
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+

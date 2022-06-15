@@ -1,0 +1,167 @@
+@import url('https://webfontworld.github.io/busan/Busan.css');
+:root{
+    --normal-line:1px solid;
+    
+    --light-gray:#dcdcdc90;
+    --medium-gray: #b4b4b4;
+    --dark-gray: #969696;
+  
+    --font-17 : 17px;
+    --font-22 : 22px;
+    --font-25 : 25px;
+  
+  }
+
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'busan', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../images/BusanCinemaCenter.jpg) no-repeat ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    width: 400px;
+    height: 415px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container form h4{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: var(--font-25);
+    color: #fff;
+    font-weight: 300;
+}
+
+.container form .id ,
+.container form .password {
+    border-bottom: var(--normal-line) var(--light-gray);
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.container form .id input,
+.container form .password input{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: var(--font-17);
+    font-weight: 300;
+    width: 270px;
+}
+
+.container form .id input::placeholder,
+.container form .password input::placeholder{
+    color: #dadada;
+}
+
+.container form i{
+  color: #dadada;
+  font-size: var(--font-17);
+  padding: 4px;
+}
+.container form ion-icon{
+    color: #dadada;
+    font-size: var(--font-25);
+}
+
+.container form .forgot{
+    font-size: var(--font-17);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.container form input[type = button]{
+    background: black;
+    border: none;
+    color: #fff;
+    font-size: var(--font-17);
+    font-weight: 300;
+    width: 120px;
+    height: 45px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.container form .lowForm{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.container form .lowForm .social{
+    margin-left: 42px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.container form .lowForm .social a{
+    height: 45px;
+    width: 45px;
+    background: rgba(255,255,255,0.3);
+    margin-left: 2px;
+    display: flex;
+}
+
+.container form .lowForm .social a:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+.container form .lowForm .social a:nth-child(3){
+    border-radius: 0 0 4px 0;
+}
+
+.container form .lowForm .social a ion-icon{
+    color: #eee;
+    font-size: 35px;
+}
+
+.btn > * {
+    text-align: center;
+}
+
+.go_login{
+    background: white;
+
+    border: none;
+    font-size: var(--font-17);
+    font-weight: 300;
+    width: 120px;
+    height: 45px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.go_login_a{
+    color: black;
+}
