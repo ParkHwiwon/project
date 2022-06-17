@@ -47,20 +47,20 @@
 		<h4>로그인</h4>
 		
 	    <div class="id">
-             <input id="idInput" type="text" placeholder="ID를 입력하세요." name="id">
+             <input id="idInput" type="text" placeholder="ID를 입력하세요." maxlength="15" required name="id">
              <i class="fa-solid fa-user"></i>
            </div>
            
            <div id="password" class="password">
-             <input id="passwordInput" type="password" placeholder="비밀번호를 입력하세요." name="pw">
+             <input type="password" placeholder="비밀번호를 입력하세요." maxlength="20" required name="pw">
              <ion-icon name="lock"></ion-icon>
            </div>
            
            <label class="keepsignedIn">
            <input type="checkbox" name="loginChk" value="true">자동로그인</label>
            
-           <input type="submit" value="로그인" >
-           <a id="naverIdLogin_loginButton" href="javascript:void(0)" onclick="return check_recaptcha();">
+           <input type="submit" value="로그인" onclick="return check_recaptcha();">
+           <a id="naverIdLogin_loginButton" href="javascript:void(0)">
              <img src="./images/btnW_로그인.png" alt="">
            </a>
            
@@ -87,7 +87,7 @@
  <script src="./js/naver-login.js"></script>
  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
  <script src="./js/kakao-login.js"></script>
- <script src="./js/logincheck.js"></script>
+ <script src="./js/login.js"></script>
  <script src="https://www.google.com/recaptcha/api.js"></script>
  
 </body>

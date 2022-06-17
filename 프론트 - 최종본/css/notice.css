@@ -57,7 +57,6 @@ main{
   letter-spacing: 2px;
   font-size: var(--font-17);
   border: var(--normal-line) var(--medium-gray);
-  background: var(--light-gray);
   display: flex;
   padding: 15px;  
   cursor: pointer;

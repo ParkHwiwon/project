@@ -25,6 +25,12 @@
   text-decoration: none;
 }
 
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* Header */
 header {
@@ -63,6 +69,7 @@ header {
 
 .header-login a{
   padding-right: 10px;
+  padding-left: 10px;
   color: white;
   display: flex;
 }

@@ -1,0 +1,33 @@
+
+:root{
+  --normal-line:1px solid;
+  
+  --light-gray:#dcdcdc90;
+  --medium-gray: #b4b4b4;
+  --dark-gray: #969696;
+
+  --font-17 : 17px;
+  --font-22 : 22px;
+  --font-25 : 25px;
+
+}
+
+
+div.buttons{
+	padding-top:30px;
+	text-align: center;
+}
+
+.button{
+	width: 100px;
+	height: 50px;
+	border:val(--normal-line)val(--medium-gray);
+}
+
+.postForm{
+	padding-top: 100px;
+}
+
+.boardTitle{
+	border:val(--normal-line)val(--medium-gray);
+}
