@@ -1,5 +1,21 @@
 <%@ page contentType="text/html;charset=UTF-8" import="java.sql.*"%>
 <%@ page import="java.util.*"%>
+
+<%
+	Cookie[] cookies = request.getCookies();
+	if(cookies != null) {
+		for(Cookie tempCookie : cookies) {
+			if(tempCookie.getName().equals("idKey")) {
+				//쿠키 값으로 대신 로그인 처리함
+				session.setAttribute("idKey", tempCookie.getValue());
+			}
+		}
+	}
+	
+    //세션값 가져오기, Object형으로 저장되기에 다운캐스팅이 필요함
+    String id = (String)session.getAttribute("idKey");
+    
+%>
     
 <!DOCTYPE html>
 <html lang="ko">
@@ -10,6 +26,7 @@
     <title>잘놀다갑니다</title>
     <link rel="stylesheet" href="./css/destyle.css">
     <link rel="stylesheet" href="./css/news.css">
+      <link rel="stylesheet" href="./css/dropdown.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="16x16">
@@ -17,10 +34,10 @@
     <script src="https://kit.fontawesome.com/536e37fbfc.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <script defer src="./js/news.js"></script>
     <script defer src="./js/newsEmployment.js"></script>
     <script defer src="./js/newsKookje.js"></script>
+    <script src="./js/dropdown.js"></script>
 </head>
 <body>
     <!-- 헤더 -->
@@ -37,9 +54,13 @@
             <li><a href="./photo.jsp">포토</a></li>
           </ul>
           <div class="header-login">
-            <a href="./login.jsp">로그인</a>
-            
-            <a href="./signUp.jsp">회원가입</a>
+        <% if(id != null) { %>
+          <b class="login"><%=id %> 님이 로그인 했습니다.</b>
+          <input type="button" value="로그아웃" onclick="location.href='logout.jsp'">
+        <% } else { %>
+          <a href="login.jsp">로그인</a>
+          <a href="signup.jsp">회원가입</a>
+        <% } %>
           </div>
         </div>
       </header>
@@ -48,10 +69,10 @@
         <div class="news">
           <div class="title">
             <ul>
-              <li><a class="maintitle" href="./newsAll.jsp">전체</a></li>
-              <li><a class="maintitle" href="./newsBusanIntegrated.jsp">부산 통합 공지사항</a></li>
-              <li><a class="maintitle" href="./newsBusanEmployment.jsp">부산 채용공고</a></li>
-              <li><a class="maintitle" href="./newsBusanKookje.jsp">국제신문:문화</a></li>
+              <li><a href="./newsAll.jsp">전체</li></a>
+              <li><a href="./newsBusanIntegrated.jsp">부산 통합 공지사항</a></li>
+              <li><a href="./newsBusanEmployment.jsp">부산 채용공고</a></li>
+              <li><a href="./newsBusanKookje.jsp">국제신문:문화</a></li>
             </ul>
           </div>
           <div class="content">

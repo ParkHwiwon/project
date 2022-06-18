@@ -25,6 +25,12 @@
   text-decoration: none;
 }
 
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* Header */
 header {
@@ -32,7 +38,7 @@ header {
   height: 60px;
   display: flex;
   background-color: var(--light-gray);
-  color: black;
+  color: white;
   justify-content:center;
   position: fixed;
   z-index: 9;
@@ -47,7 +53,7 @@ header {
   align-items: center;
   font-size: var(--font-25);
   letter-spacing: 2px;
-  color:black;
+  color: black;
 }
 
 .header-logo img{
@@ -65,7 +71,7 @@ header {
   padding-right: 10px;
   padding-left: 10px;
   color: black;
-
+  display: flex;
 }
 
 .header-menu{
@@ -73,19 +79,21 @@ header {
   display: flex;
   margin-left: 100px;
 }
-
 .header-menu li{
   padding-right: 50px;
-  overflow : hidden;
-}  
-
-.header-menu li a{
-  color: black; 
 }
 
-
+.header-menu li a{
+  color: black;
+}
 .header-login {
   margin-left: 300px;
+  color: black;
+}
+
+.header-login b{
+	cursor: pointer;
+	margin-right:10px;
 }
 
 
@@ -98,19 +106,16 @@ height: 130px;
   width: 100%;
 }
 .footer-information{
+  text-align: center;
   font-size: 12px;
   margin: 0 auto;
   padding-top: 15px;
   width: 300px;
   height: 130px;
-  text-align: center;
-} 
+}
 
 /* pagemove button*/
 
-.pagemove{
-	margin: 0 auto;
-}
 
 .pagemove ul{
   display: flex;
@@ -152,4 +157,3 @@ height: 130px;
   padding-top: 7px;
   text-align: center;
 }
-

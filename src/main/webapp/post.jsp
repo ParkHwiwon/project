@@ -6,7 +6,7 @@
 %>
 <html>
 <head>
-<title>JSP Board</title>
+<title>잘놀다갑니다</title>
   	<link href="style.css" rel="stylesheet" type="text/css">
   	<!-- include libraries(jQuery, bootstrap) -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
@@ -56,19 +56,16 @@
  <div class="postForm">
 	<form name="postFrm" method="post" action="boardPost" enctype="multipart/form-data">
 		<table>
-	         <colgroup>
-	             <col style="width:150px">
-	             <col style="width:850px">
-	         </colgroup>
+
 	         <tbody>
 	             <tr>
-	                 <th>TITLE</th>
+	            
 	                 <td>
 	                 	<input class="boardTitle" type="text" name="boardTitle" placeholder="제목을 입력하세요" value="">
 	                 </td>
 	             </tr>
 	             <tr>
-	                 <th>CONTENTS</th>
+	       
 	                 <td>
 	                     <textarea class="boardContent" name="boardContent" id="summernote"></textarea>
 	                 </td>

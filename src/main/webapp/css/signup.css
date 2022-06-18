@@ -23,10 +23,6 @@ a{
     text-decoration: none;
 }
 
-.header a div{
-	color: white;
-}
-
 .container{
     min-height: 100vh;
     width: 100%;
@@ -99,7 +95,7 @@ a{
     margin-right: 20px;
 }
 
-.container form input[type = button]{
+.container form input[type = submit]{
     background: black;
     border: none;
     color: #fff;
@@ -152,6 +148,18 @@ a{
 
 .btn > * {
     text-align: center;
+}
+.btn input[type="button"]{
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: var(--font-17);
+    font-weight: 300;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 
 .go_login{

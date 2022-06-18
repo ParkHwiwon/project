@@ -29,14 +29,6 @@
 		keyWord = request.getParameter("keyWord");
 	}
 	
-	System.out.println(keyWord);
-	
-/* 	if (request.getParameter("reload") != null){
-		if(request.getParameter("reload").equals("true")) {
-			keyWord = "";
-		}
-	} */
-	
 	if (request.getParameter("nowPage") != null) {
 		nowPage = Integer.parseInt(request.getParameter("nowPage"));
 	}
@@ -61,8 +53,9 @@
   <link rel="stylesheet" href="./css/destyle.css">
   <link rel="stylesheet" href="./css/common.css" >
   <link rel="stylesheet" href="./css/photo.css">
-  
-  <script src="./js/photo.js" defer></script>
+  <link rel="stylesheet" href="./css/dropdown.css">
+  <script src="./js/dropdown.js" ></script>
+  <script src="./js/photo.js" ></script>
   <script type="text/javascript">
 	
 	function pageing(page) {
@@ -160,7 +153,6 @@
       <div class="header-login">
         <% if(id != null) { %>
           <b class="login"><%=id %> 님이 로그인 했습니다.</b>
-          <a href="setting.jsp">설정</a>
           <input type="button" value="로그아웃" onclick="location.href='logout.jsp'">
         <% } else { %>
           <a href="login.jsp">로그인</a>
@@ -203,18 +195,25 @@
 				out.println("등록된 게시물이 없습니다.");
 			  } else {
 				  
-				  for (int i = 0;i<numPerPage; i++) {
-						if (i == listSize) break;
-						PhotoBean bean = vlist.get(i);
-						String photoUrl = bean.getPhotoUrl();
-						
-				  %>
-				  <img src="./images/<%=photoUrl%>"/>
-				 <% 
-				  }
-			  }
-			  
-	  %>
+	              for (int i = 0;i<numPerPage; i++) {
+	                  if (i == listSize) break;
+	                  PhotoBean bean = vlist.get(i);
+	                  String photoUrl = bean.getPhotoUrl();
+	                  String[] urlInfo = photoUrl.split(";");
+	                  
+	                  String first = urlInfo[1]; //장소이름
+	                  String second = urlInfo[2]; // 장소 이미지
+	              %>
+	             
+	              <p><%=urlInfo[1]%><img src="./images/<%=urlInfo[2]%>"/></p>
+	             <% 
+	             
+	         
+	              }
+	           }
+	           
+	     %>
+
 
       </div>
       <div class="pagemove">
@@ -236,8 +235,8 @@
     			  		<a href="javascript:block('<%=nowBlock-1%>')">prev...</a><%}%>&nbsp; 
     			  		<%for ( ; pageStart < pageEnd; pageStart++){%>
      			     	<a href="javascript:pageing('<%=pageStart %>')"> 
-     					<%if(pageStart==nowPage) {%><font color="blue"> <%}%>
-     					[<%=pageStart %>] 
+     					<%if(pageStart==nowPage) {%><font> <%}%>
+     					<%=pageStart %>
      					<%if(pageStart==nowPage) {%></font> <%}%></a> 
     					<%}//for%>&nbsp; 
     					<%if (totalBlock > nowBlock ) {%>

@@ -21,6 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>잘놀다갑니다</title>
   <link rel="stylesheet" href="./css/help.css">
+   <link rel="stylesheet" href="./css/dropdown.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/destyle.css">
   <link rel="stylesheet" href="./css/modal_inquiry.css">
@@ -38,13 +39,12 @@
       <ul class="header-menu">
         <li><a href="./busanIntroduce.jsp">부산소개</a></li>
         <li><a href="./community.jsp">커뮤니티</a></li>
-        <li><a href="javascript:void(0)">소식</a></li>
-        <li><a href="javascript:void(0)">포토</a></li>
+        <li><a href="./newsAll.jsp">소식</a></li>
+        <li><a href="./photo/jsp">포토</a></li>
       </ul>
       <div class="header-login">
         <% if(id != null) { %>
           <b class="login"><%=id %> 님이 로그인 했습니다.</b>
-          <a href="setting.jsp">설정</a>
           <input type="button" value="로그아웃" onclick="location.href='logout.jsp'">
         <% } else { %>
           <a href="login.jsp">로그인</a>
@@ -62,16 +62,16 @@
     <div class="leftSide">
       <div class="l-sidebar">
         <div class="l-menu">
-          <a href="./notice.jsp">공지사항</a><i class="fa-solid fa-bullhorn"></i>
+          <a href="./notice.jsp">공지사항<i class="fa-solid fa-bullhorn"></i></a>
         </div>
         <div class="l-menu">
-          <a href="./help.jsp">도움말</a><i class="fa-solid fa-circle-question"></i>
+          <a href="./help.jsp">도움말<i class="fa-solid fa-circle-question"></i></a>
         </div>
         <div class="l-menu inquiry">
-          <a>문의하기</a><i class="fa-solid fa-person-circle-question"></i>
+          <a>문의하기<i class="fa-solid fa-person-circle-question"></i></a>
         </div>
         <div class="l-menu">
-          <a href="./setting.jsp">설정</a><i class="fa-solid fa-gear"></i>
+          <a href="./setting.jsp">설정<i class="fa-solid fa-gear"></i></a>
         </div>
       </div>
     </div>
@@ -90,14 +90,14 @@
 
       <div class="noti-container">
         <div class="noti-main">
-          <div class="noti-title">도움말&nbsp&nbsp<i  class="fa-solid fa-circle-question"></i></div>
+          <div class="noti-title">계정&nbsp&nbsp<i class="fa-solid fa-lock"></i></div>
         </div>
         <div class="noti-sub">
           <ul>
-            <li class="noti-sub-menu"><a href="./help.html">도움말</a></li>
-            <li class="noti-sub-menu"><a href="#">계정</a></li>
-            <li class="noti-sub-menu"><a href="./privacyPolicy.html">개인정보정책</a></li>
-            <li class="noti-sub-menu"><a href="./etc.html">기타</a></li>
+            <li class="noti-sub-menu"><a href="./help.jsp">도움말</a></li>
+            <li class="noti-sub-menu"><a href="./account.jsp">계정</a></li>
+            <li class="noti-sub-menu"><a href="./privacyPolicy.jsp">개인정보정책</a></li>
+            <li class="noti-sub-menu"><a href="./etc.jsp">기타</a></li>
           </ul>
         </div>
         
@@ -177,7 +177,7 @@
 </div>
 </div>
 
-
+<script src="./js/dropdown.js"></script>
 <script src="./js/noti-list.js"></script>
 <script src="./js/modal_inquiry.js"></script>
 <script src="https://kit.fontawesome.com/536e37fbfc.js" crossorigin="anonymous"></script>

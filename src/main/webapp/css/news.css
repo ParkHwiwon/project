@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-
+@import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
 
 :root{
   --normal-line:1px solid;
@@ -15,6 +15,9 @@
 }
 
 
+body{
+  background: #dcdcdc90;
+}
 /* main */
 
 main {
@@ -57,9 +60,7 @@ main .title a {
   color: black;
 }
 
-main .title a:active{
-  color: var(--dark-gray);
-}
+
 main .item {
   display: flex;
   align-items: center;
@@ -78,8 +79,6 @@ main .item .item-text li{
 main .item .item-text li p{
   margin-bottom: 20px;
   display: flex;
-  line-height: 1.5;
-  
 }
 
 
@@ -87,9 +86,9 @@ main .item .item-text li p{
 .newslist > a ,
 .newslist > div > *,
 .newslist > div > p > *{
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'IropkeBatang';
   font-size: var(--font-22);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .newslist > div > a{
@@ -99,9 +98,8 @@ main .item .item-text li p{
 
 .newstitle{
   font-size: 25px;
-  font-weight: 500;
+  font-family: 'Noto Serif KR', serif;
 }
-
 
 /* moveup button */
 
@@ -122,14 +120,5 @@ img.bugi{
   bottom: 100px;
   right: 25px;
   cursor: pointer;
-}
-
-.pagemove-number {
-    margin-left: 0;
-}
-
-.pagemove-number a,
-.pagemove-Arrow a {
-    padding: 0;
 }
 

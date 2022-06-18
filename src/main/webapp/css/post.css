@@ -11,7 +11,9 @@
   --font-25 : 25px;
 
 }
-
+.header-logo{
+	text-decoration:none;
+}
 
 div.buttons{
 	padding-top:30px;
@@ -19,15 +21,35 @@ div.buttons{
 }
 
 .button{
-	width: 100px;
-	height: 50px;
-	border:val(--normal-line)val(--medium-gray);
+    background: var(--light-gray);
+    border: none;
+    color: black;
+    width: 120px;
+    height: 45px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button:active{
+	background: black;
+    color: white;
 }
 
 .postForm{
-	padding-top: 100px;
+	padding-top: 150px;
+	margin: 0 auto;
+	width:1000px;
 }
 
+input.boardTitle{
+	border:3px solid var(--dark-gray);
+	border-radius: 5px;
+}
 .boardTitle{
-	border:val(--normal-line)val(--medium-gray);
+	width:1000px;
+	height:50px;
+	background: var(--light-gray);
+	margin-bottom: 50px;
 }

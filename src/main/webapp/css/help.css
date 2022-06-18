@@ -32,15 +32,18 @@
 
 main{
   width: 100%;
-  height: 850px;
-  background: var(--light-gray);
+  height : auto;
+  background: #fff;
   padding-top: 70px;
+  flex: 1;
 }
 
 .main{
   display: flex;
   justify-content: center;
 }
+
+/* leftSide */
 
 /* leftSide */
 
@@ -52,7 +55,6 @@ main{
 .l-sidebar{
   width: 230px;
   height: 200px;
-  background: white;
   margin-top: 20px;
 
 }
@@ -60,17 +62,17 @@ main{
   letter-spacing: 2px;
   font-size: var(--font-17);
   border: var(--normal-line) var(--medium-gray);
-  background: var(--light-gray);
   display: flex;
-  padding: 15px;
+  padding: 15px;  
   cursor: pointer;
-  justify-content: space-between;
 }
 
 .l-menu a{
   color: black;
   letter-spacing: 2px;
   font-size: var(--font-17);
+  width: 100%;
+  height: 100%;
 }
 
 .l-menu i{
@@ -79,11 +81,22 @@ main{
 .l-menu:hover{
   transform-origin: center center;
   transform: scale(1.1);
-  transition: transform 0.2s;
+  transition: transform 0.8s;
+  background-color: black;
+  border: none;
+  justify-content: space-between;
 }
 
-.l-menu:hover i {
-  display: block;
+.l-menu:hover i,
+.l-menu:hover a,
+.l-menu:hover label{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.l-sidebar div:not(:last-of-type){
+  border-bottom: none;
 }
 
 .l-sidebar div:not(:last-of-type){
