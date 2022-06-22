@@ -1,1 +1,0 @@
-var realtimeRank = document.getElementById("realtime-rank");
