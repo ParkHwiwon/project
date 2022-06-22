@@ -1,0 +1,179 @@
+@import url('https://webfontworld.github.io/busan/Busan.css');
+:root{
+  --normal-line:1px solid;
+  
+  --light-gray:#dcdcdc90;
+  --medium-gray: #b4b4b4;
+  --dark-gray: #969696;
+
+  --font-17 : 17px;
+  --font-22 : 22px;
+  --font-25 : 25px;
+
+}
+
+body{
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content : space-between;
+	height : auto !important;
+	background: var(--light-gray);
+}
+
+main{
+	display : flex;
+	justify-content : center;
+	margin-bottom : 1vh;
+}
+
+.main,
+table.main{
+  border: var(--normal-line)var(--light-gray);
+  border-collapse: inherit;
+}
+
+
+
+main:nth-child(2){
+	margin-top: 100px;
+	flex-basis: 40%;
+}
+
+main:nth-child(3){
+	flex-basis: 5%;
+}
+
+main:nth-child(4){
+	flex-basis: 20%;
+}
+
+main .main{
+	width:500px;
+	background-color: white;
+}
+.title{
+	overflow:hidden;
+	text-align: center;
+    font-size: var(--font-25);
+    font-family: 'busan', sans-serif;
+}
+
+.content{
+	height: 320px;
+	overflow: auto;
+}
+main .main hr{
+	border-color: #e0e0e0;
+}
+
+main .main > *{
+	margin:10px 0 10px 10px;
+	font-family: 'busan', sans-serif;
+}
+
+
+main .main thead{
+	height: 4vh;
+	text-align: center;
+	border:var(--normal-line)var(--light-gray);
+}
+main .main tbody{
+	border:var(--normal-line)var(--light-gray);
+	word-break: break-all;
+}
+main .main thead td{
+  vertical-align: middle;
+  background: var(--light-gray);
+}
+
+main .main tbody td{
+	border-bottom : 1px solid #e0e0e0;
+}
+
+main .main tbody td > *{
+	margin: 1vh 1vw;
+}
+
+
+main .main .info{
+	display: inline-flex;
+	width: 100%;
+}
+
+main .time-count{
+	display: flex;
+	align-items: center;
+}
+
+main .user{
+	align-items: center;
+	display:flex;
+	margin-right: 220px;
+    margin-left: 20px;
+}
+
+main .user img{
+	width: 25px;
+	height: 25px;
+	margin-right : 1vw;
+}
+
+.buttons{
+	text-align: center;
+}
+.buttons a{
+	margin-right:20px;
+}
+.buttons a:hover{
+	color:var(--dark-gray);
+}
+
+main form {
+	background-color: white;
+	display: flex;
+	height: 40px;
+}
+
+main form .comment{
+	border: var(--normal-line)var(--light-gray);
+	text-align: left;
+}
+
+main form .comment input{
+	width: 446px;	
+	padding: 1vh 1vw;
+}
+
+main form .comment input:focus{
+	outline: none;
+}
+
+.commentBtn{
+	text-align: right;
+}
+.commentBtn a{
+	margin-left:20px;
+}
+
+.commentBtn > a:hover{
+	color:var(--dark-gray);
+}
+
+main form .submit{
+	line-height: 30px;
+}
+
+main form .submit input{
+	background-color : black;
+	color : white;
+	padding : .5vh .5vw;
+	border-radius: 10%;
+}
+
+.time-count{
+	font-size: 13px;
+	color: #a0a0a0;
+	font-weight: bold;
+}
+
